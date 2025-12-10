@@ -26,7 +26,7 @@ while (true)
         break;
     }
 
-    if (wordParser.TryParse(input, out var word))
+    if (wordParser.TryParse(input.ToUpper(), out var word))
     {
         Console.WriteLine($"Parsed word: {word}");
     }
